@@ -50,15 +50,15 @@ public class Cylinder {
 
     //5 methods and required overrides bellow
     public double getAreaOfFoundation() {
-        return Math.PI * Math.pow(radius, 2);
+        return Math.PI * Math.pow(this.getRadius(), 2);
     }
 
     public double getPerimeterOfFoundation() {
-        return 2 * Math.PI * radius;
+        return 2 * Math.PI * this.getRadius();
     }
 
     public double getAreaOfCylinderSide() {
-        return height * getPerimeterOfFoundation();
+        return this.getHeight() * getPerimeterOfFoundation();
     }
 
     public double getAreaOfCylinder() {
@@ -66,7 +66,7 @@ public class Cylinder {
     }
 
     public double getVolumeOfCylinder() {
-        return getAreaOfFoundation() * height;
+        return getAreaOfFoundation() * this.getHeight();
     }
 
     @Override
