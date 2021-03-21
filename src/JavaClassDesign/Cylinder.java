@@ -48,6 +48,7 @@ public class Cylinder {
         Colour = colour;
     }
 
+    //5 methods and required overrides bellow
     public double getAreaOfFoundation() {
         return Math.PI * Math.pow(radius, 2);
     }
