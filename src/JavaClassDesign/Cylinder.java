@@ -13,7 +13,7 @@ import java.util.Objects;
 public class Cylinder {
     private double height;
     private double radius;
-    private String Colour;
+    private String colour;
 
     public Cylinder() {
     }
@@ -21,7 +21,7 @@ public class Cylinder {
     public Cylinder(double height, double radius, String colour) {
         this.height = height;
         this.radius = radius;
-        Colour = colour;
+        colour = colour;
     }
 
     public double getHeight() {
@@ -41,11 +41,11 @@ public class Cylinder {
     }
 
     public String getColour() {
-        return Colour;
+        return colour;
     }
 
     public void setColour(String colour) {
-        Colour = colour;
+        colour = colour;
     }
 
     //5 methods and required overrides bellow
@@ -86,6 +86,6 @@ public class Cylinder {
     public String toString() {
         return  "height=" + height +
                 ", radius=" + radius +
-                ", Colour='" + Colour + '\'';
+                ", Colour='" + colour + '\'';
     }
 }
